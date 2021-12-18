@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background-color: rgba(75, 40, 202, 0.767);
+    font-family: sans-serif;
+}
+
+header {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(138, 17, 17);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.modal {
+    position: fixed;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+    top: -300px;
+    transition: 0.5s;
+}
+
+.modal.show {
+    top: 50px;
+}
+
+.fa-play {
+    color: #000;
+    font-size: 22px;
+}
+
+.header__text {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 40px;
+}
+
+header.game {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lose {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 30px;
+    background-image: url(./You_lose.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.win {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 30px;
+    background-image: url(./miggi-you-win.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#rest,
+#res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 270px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(167, 27, 27);
+    color: #fff;
+}
+.randomSon1,
+.randomSon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+#rest:hover,
+#res:hover {
+    background-color: rgb(165, 22, 134);
+}
+
+.OK,
+.start {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 25px auto 15px auto;
+    background-color: rgb(23, 170, 175);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.play {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 22px;
+    background-color: rgb(21, 212, 63);
+    border: none;
+    margin: 5px auto 15px auto; 
+    cursor: pointer;
+}
+
+.inp {
+    display: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto;
+    border: none;
+    color: #000;
+    text-align: center;
+}
+
+#send {
+    display: none;
+    margin-top: 15px;
+}
+
+.time {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    font-size: 60px;
+}
+
+#a {
+    text-align: center;
+    font-size: 24px;
+}
+.span,
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media(max-width:1024px){
+    .time {
+        left: 120px;
+    }
+}
+
+@media(max-width:768px){
+    .time {
+        left: 60px;
+        font-size: 40px;
+    }
+}
+
+@media(max-width:425px){
+    .time {
+        left: 160px;
+        top: 185px;
+        font-size: 33px;
+    }
+}
